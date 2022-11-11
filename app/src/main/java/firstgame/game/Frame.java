@@ -9,9 +9,12 @@ public class Frame {
     public Frame(GamePanel panel) {
         frame = new JFrame();
 
-        frame.setSize(400, 400);
+
+        frame.setSize(panel.xSize, panel.ySize);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.add(panel);
+        frame.setLocationRelativeTo(null);
+        frame.pack();
         frame.setVisible(true);
     }
 }
