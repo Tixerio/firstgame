@@ -34,7 +34,7 @@ public class GamePanel extends JPanel {
 	private void importImg() {
 
 		try {
-			img =  ImageIO.read(new FileInputStream("D:/Programmieren/Java/firstgame/res/player_sprites.png"));
+			img =  ImageIO.read(new FileInputStream("D:/Programmieren/Java/firstgame/app/src/main/java/firstgame/res/player_sprites.png"));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
